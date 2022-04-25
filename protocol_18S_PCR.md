@@ -8,7 +8,7 @@ MIOP protocol template
 | ------------- | ------------- | ------------- | ------------- |
 | Jacoby Baker  | MBARI  |   | yyyy-mm-dd |
 | Kobun Truelove  | MBARI  |   | yyyy-mm-dd |
-| Kathleen Pitz  | MBARI  |   | yyyy-mm-dd |
+| Kathleen Johnson Pitz  | MBARI  | 0000-0002-4931-8592  | 2022-04-25 |
 
 ## PROTOCOL REVISION RECORD
 
@@ -16,7 +16,7 @@ Version numbers start at "1.0.0" when the protocol is first completed and will i
 
 | VERSION  | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
 | ------------- | ------------- | ------------- |
-| 1.0.0  | yyyy-mm-dd  | Initial release  |
+| 1.0.0  | 2022-04-25  | Initial release  |
 |    |    |    |
 
 ## RELATED PROTOCOLS IN YOUR FOLDER
@@ -34,8 +34,8 @@ This is a list of other protocols that are not in your folder which should be kn
 
 | EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR Please note who authored the protocol (this may also be a company name) | ACCESS DATE This is the date you downloaded or scanned the protocol and uploaded it. |
 | ------------- | ------------- | ------------- |
-|    |    | yyyy-mm-dd  |
-|    |    | yyyy-mm-dd  |
+|  Environmental DNA (eDNA) 18S metabarcoding Illumina MiSeq NGS PCR Protocol V.2 https://dx.doi.org/10.17504/protocols.io.n2vdge6 dx.doi.org/10.17504/protocols.io.n2vdge6  | Collin Closek, Anni Djurhuus, Katie Pitz, Ryan Kelly, Reiko Michisaki, Kristine Walz, Hilary Starks, Francisco Chavez, Alexandria Boehm, Mya Breitbart  | yyyy-mm-dd  |
+| 18S Illumina Amplicon Protocol https://earthmicrobiome.org/protocols-and-standards/18s/ dx.doi.org/10.17504/protocols.io.nuvdew6 |  Earth Microbiome Project  | yyyy-mm-dd  |
 
 ## ACRONYMS AND ABBREVIATIONS
 
