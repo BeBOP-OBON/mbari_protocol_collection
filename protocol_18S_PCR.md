@@ -124,18 +124,18 @@ Please specify the actions you took to amplify the previously extracted DNA and 
   - 3 μl each of forward and reverse primers (5 μM)
   - 28.5 μl molecular-biology grade water
 
-- 18S Forward PCR sequence (Euk1391F):
-  > **ACACTGACGACATGGTTCTACA**GTACACACCGCCCGTC
-- 18S Reverse PCR sequence (EukBr):
-  > **TACGGAGCAGAGACTTGGTCT**TGATCCTTCTGCAGGTTCACCTAC
+- 18S Forward PCR sequence (**Euk1391F**) with Fluidigm adapter CS1:
+  > ACACTGACGACATGGTTCTACA**GTACACACCGCCCGTC**
+- 18S Reverse PCR sequence (**EukBr**) with Fluidigm adapter CS2:
+  > TACGGAGCAGAGACTTGGTCT**TGATCCTTCTGCAGGTTCACCTAC**
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
-| Euk1391F | forward | **ACACTGACGACATGGTTCTACA**GTACACACCGCCCGTC |
-| EukBr | reverse | **TACGGAGCAGAGACTTGGTCT**TGATCCTTCTGCAGGTTCACCTAC |
+| **Euk1391F** | forward | ACACTGACGACATGGTTCTACA**GTACACACCGCCCGTC** |
+| **EukBr** | reverse | TACGGAGCAGAGACTTGGTCT**TGATCCTTCTGCAGGTTCACCTAC** |
 
 2. PCR reactions were run in 96-well plates with a NTC run in singleton for each plate
-
+3. 18S thermal cycling parameters - These parameters use a normal ramp speed::
 
 ```
 95° C for 10 minutes
