@@ -6,9 +6,9 @@ MIOP protocol template
 
 | PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template.  | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Jacoby Baker  | MBARI  | Content Cell | yyyy-mm-dd |
-| Kobun Truelove  | MBARI  | Content Cell | yyyy-mm-dd |
-| Kathleen Pitz  | MBARI  | Content Cell | yyyy-mm-dd |
+| Jacoby Baker  | MBARI  |   | yyyy-mm-dd |
+| Kobun Truelove  | MBARI  |   | yyyy-mm-dd |
+| Kathleen Pitz  | MBARI  |   | yyyy-mm-dd |
 
 ## PROTOCOL REVISION RECORD
 
@@ -17,7 +17,7 @@ Version numbers start at "1.0.0" when the protocol is first completed and will i
 | VERSION  | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
 | ------------- | ------------- | ------------- |
 | 1.0.0  | yyyy-mm-dd  | Initial release  |
-| Content Cell  | Content Cell  | Content Cell  |
+|    |    |    |
 
 ## RELATED PROTOCOLS IN YOUR FOLDER
 
@@ -25,8 +25,8 @@ This is a list of other protocols deposited in your folder which should be known
 
 | PROTOCOL NAME AND LINK  | VERSION The version of the protocol you linked to | RELEASE DATE This is the date corresponding to the version listed to the left |
 | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+|    |    | yyyy-mm-dd  |
+|    |    | yyyy-mm-dd  |
 
 ## RELATED EXTERNAL PROTOCOLS
 
@@ -34,21 +34,21 @@ This is a list of other protocols that are not in your folder which should be kn
 
 | EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR Please note who authored the protocol (this may also be a company name) | ACCESS DATE This is the date you downloaded or scanned the protocol and uploaded it. |
 | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+|    |    | yyyy-mm-dd  |
+|    |    | yyyy-mm-dd  |
 
 ## ACRONYMS AND ABBREVIATIONS
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+|    |    |
 
 ## GLOSSARY
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|    |    |
+|    |    |
 
 # BACKGROUND
 
@@ -90,15 +90,22 @@ Specify how much time is necessary to execute the procedure.
 
 | DESCRIPTION e.g. filter | PRODUCT NAME AND MODEL Provide the official name of the product | MANUFACTURER Provide the name of the manufacturer of the product. | QUANTITY Provide quantities necessary for one application of the standard operating procedure (e.g. number of filters). | REMARK For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure. |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Durable equipment |
-| Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
-| Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
-| Consumable equipment |
-| Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
-| Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
-| Chemicals |
-| Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
-| Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
+| **Durable equipment** |
+| ultraviolet light source [OBI:0002900] |  |  |  |  |
+| PCR instrument [OBI:0000989] |   |   |   |   |
+| electrophoresis system [OBI:0001053] |   |   |   |   |
+| fluorometer [OBI:0400143] | FMAX Fluorometer | Molecular Devices |   | with SoftMaxPro v1.3.1 |
+| **Consumable equipment** |
+| Agarose gel |   |   | 2 |   |
+| Agencourt AMPure XP bead system |  | Beckman Coulter, USA  |   |   |
+| Quant-It Picogreen dsDNA Assay |   | Life Technologies |   |   |
+| **Chemicals** |
+| 10% Bleach |   |   |   |   |
+| 70% Ethanol |   |   |   |   |
+| RNase Away |   |   |   |   |
+| Amplitaq Gold Fast PCR mastermix |   |   |   |   |
+| molecular-biology grade water |   |   |   |   |
+| forward and reverse primers (5 μM) |   |   |   |   |
 
 # STANDARD OPERATING PROCEDURE
 
@@ -131,8 +138,8 @@ Please specify the actions you took to amplify the previously extracted DNA and 
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
-| **Euk1391F** | forward | ACACTGACGACATGGTTCTACA**GTACACACCGCCCGTC** |
-| **EukBr** | reverse | TACGGAGCAGAGACTTGGTCT**TGATCCTTCTGCAGGTTCACCTAC** |
+| **Euk1391F** and Fluidigm CS1| forward | ACACTGACGACATGGTTCTACA**GTACACACCGCCCGTC** |
+| **EukBr** and Fluidigm CS2 | reverse | TACGGAGCAGAGACTTGGTCT**TGATCCTTCTGCAGGTTCACCTAC** |
 
 2. PCR reactions were run in 96-well plates with a NTC run in singleton for each plate
 3. 18S thermal cycling parameters - These parameters use a normal ramp speed::
@@ -157,20 +164,15 @@ Hold at 4 °C
 | extension | 72° C | 10 minutes | 1 |
 | hold | 4° C | infinity | 1 |
 
-3. Step 3
 
 
 ### Quality control, PCR clean-up
 
-Please specify the actions you took to confirm the quality of the PCR output, to clean up the PCR output and the equipment you used (e.g. agarose gel to confirm quality, purification of PCR products).
+1. After PCR amplification of the marker region, PCR products were run through an agarose gel to confirm the presence of target bands and absense of non-specific amplification across environmental samples as well as the absence of amplification in no-template controls (NTCs).
+2. PCR products were purified and size selected using the Agencourt AMPure XP bead system (Beckman Coulter, USA). 
+3. A second agarose gel was run to confirm primer removal and retention of target amplicons after purification. 
+3. Purified products were then quantified using Quant-It Picogreen dsDNA Assay (Life Technologies) on an fmax Molecular Devices Fluorometer with SoftMaxPro v1.3.1
 
-1. Step 1
-
-2. Step 2
-
-## Quality control
-
-Describe and explain criteria used to validate results of the standard operating procedure.
 
 ## Basic troubleshooting guide
 
