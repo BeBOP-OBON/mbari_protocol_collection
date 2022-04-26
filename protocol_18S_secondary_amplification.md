@@ -91,21 +91,16 @@ Specify how much time is necessary to execute the procedure.
 | DESCRIPTION e.g. filter | PRODUCT NAME AND MODEL Provide the official name of the product | MANUFACTURER Provide the name of the manufacturer of the product. | QUANTITY Provide quantities necessary for one application of the standard operating procedure (e.g. number of filters). | REMARK For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure. |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment** |
-| ultraviolet light source [OBI:0002900] |  |  |  |  |
-| PCR instrument [OBI:0000989] |   |   |   |   |
-| electrophoresis system [OBI:0001053] |   |   |   |   |
-| fluorometer [OBI:0400143] | FMAX Fluorometer | Molecular Devices |   | with SoftMaxPro v1.3.1 |
+|  |   |   |   |   |
+|  |   |   |   |   |
+|  |   |   |   |   |
+|  |   |   |   |   |
 | **Consumable equipment** |
-| Agarose gel |   |   | 2 |   |
-| Agencourt AMPure XP bead system |  | Beckman Coulter, USA  |   |   |
-| Quant-It Picogreen dsDNA Assay |   | Life Technologies |   |   |
+|  |   |   |   |   |
+|  |   |   |   |   |
 | **Chemicals** |
-| 10% Bleach |   |   |   |   |
-| 70% Ethanol |   |   |   |   |
-| RNase Away |   |   |   |   |
-| Amplitaq Gold Fast PCR mastermix |   |   |   |   |
-| molecular-biology grade water |   |   |   |   |
-| forward and reverse primers (5 μM) |   |   |   |   |
+|  |   |   |   |   |
+|  |   |   |   |   |
 
 # STANDARD OPERATING PROCEDURE
 
@@ -113,11 +108,9 @@ In the following SOP, please use the exact names of equipment as noted in the ta
 
 ## Protocol
 
-Provide a step-by-step description of the protocol. The identification of difficult steps in the protocol and the provision of recommendations for the execution of those steps are encouraged.
-
 ### Preparation
 
-1.  
+1.  Complete "protocol_18S_PCR.md" and ship samples to Michigan State University RTSF Genomics Core.
 
 ### _The following steps are performed by [MSU's RTSF Genomics Core](https://rtsf.natsci.msu.edu/genomics/)_
 
