@@ -1,4 +1,4 @@
-# Protocol Template
+# MBARI 18S PCR
 
 MIOP protocol template
 
@@ -41,14 +41,15 @@ This is a list of other protocols that are not in your folder which should be kn
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
-|    |    |
+| MBARI   | Monterey Bay Aquarium Research Institute   |
+| PCR   | polymerase chain reaction   |
+|  NTC  |  no template control  |
 
 ## GLOSSARY
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
-|    |    |
-|    |    |
+|  amplicon  | A piece of DNA or RNA that is the source and/or product of amplification or replication events (https://en.wikipedia.org/wiki/Amplicon)  |
 
 # BACKGROUND
 
@@ -58,33 +59,34 @@ This work was supported by NASA grant NNX14AP62A ‘National Marine Sanctuaries 
 
 ## Summary
 
-Insert a short description of the background for the method/protocol (e.g. why and for which purpose do you perform water sampling).
-Please provide a brief summary of your method including, as appropriate, a brief description of what techniques your best practice is about, which ocean environments or regions it targets, the primary sensors covered, what type of data/measurements/observing platform it covers, limits to its applicability.
+This method uses PCR to amplify the 18S V9 region using primers 1391F and EukBr from Amaral-Zettler et al 2009 and the Earth Microbiome Project (EMP).
 
 ## Method description and rationale
 
-Insert a short description of the functioning principal of the methodology used in the protocol (i.e. how does the method work?). Please note that this is different from the step-by-step description of the protocol procedure.
-Insert a short statement explaining why the specific methodology used in the protocol has been selected (e.g. it is highly reproducible, highly accurate, procedures are easy to execute etc….).
+This method is applied because of its ability to amplify the target region (18S V9) across many different groups of organisms, the target region's ability to discriminate between different taxa, and the common research application of this primer set allowing the data to be compared to a reference database and other published environmental datasets. 
 
 ## Spatial coverage and environment(s) of relevance
 
-If applicable, please specify the region where the protocol is applied. For regional term guidance see here. If applicable, please indicate here the environment(s) of relevance for the protocol, e.g. Abyssal plain. Select from the ENVO terminology.
+
+- ocean [ENVO:00000015]
+
+- freshwater lake [ENVO:00000021]
 
 # PERSONNEL REQUIRED
 
-Insert the number of technicians, data managers, and scientists required for the good execution of the procedure
+- 1 technician
 
 ## Safety
 
-Identify hazards associated with the procedure and specify protective equipment and safety training required to safely execute the procedure
+> Identify hazards associated with the procedure and specify protective equipment and safety training required to safely execute the procedure
 
 ## Training requirements
 
-Specify technical training required for the good execution of the procedure.
+> Specify technical training required for the good execution of the procedure.
 
 ## Time needed to execute the procedure
 
-Specify how much time is necessary to execute the procedure.
+> Specify how much time is necessary to execute the procedure.
 
 # EQUIPMENT
 
@@ -109,21 +111,17 @@ Specify how much time is necessary to execute the procedure.
 
 # STANDARD OPERATING PROCEDURE
 
-In the following SOP, please use the exact names of equipment as noted in the table above.
-
 ## Protocol
-
-Provide a step-by-step description of the protocol. The identification of difficult steps in the protocol and the provision of recommendations for the execution of those steps are encouraged.
 
 ### Preparation
 
 1.  Disinfect work surfaces with 10% bleach, followed by 70% ethanol.
+
 2.  RNase Away and pipets with RNase Away
+
 3. UV pipets, molecular grade water, and tube racks for 20 minutes prior to starting protocol.
 
 ### PCR
-
-Please specify the actions you took to amplify the previously extracted DNA and the equipment and primers you used (ingredients for the PCR reaction, number of triplicates, PCR cycle parameter)
 
 1. PCR reactions were run in single 75ul reactions for each sample using 12-basepair Golay barcoded reverse primers (Amaral-Zettler et al., 2009) with Fluidigm adapters CS1 & CS2. All primers listed in the 5’ to 3’ direction.
   - 3 μl DNA extract template
@@ -142,6 +140,7 @@ Please specify the actions you took to amplify the previously extracted DNA and 
 | **EukBr** and Fluidigm CS2 | reverse | TACGGAGCAGAGACTTGGTCT**TGATCCTTCTGCAGGTTCACCTAC** |
 
 2. PCR reactions were run in 96-well plates with a NTC run in singleton for each plate
+
 3. 18S thermal cycling parameters - These parameters use a normal ramp speed::
 
 ```
@@ -169,21 +168,23 @@ Hold at 4 °C
 ### Quality control, PCR clean-up
 
 1. After PCR amplification of the marker region, PCR products were run through an agarose gel to confirm the presence of target bands and absense of non-specific amplification across environmental samples as well as the absence of amplification in no-template controls (NTCs).
+
 2. PCR products were purified and size selected using the Agencourt AMPure XP bead system (Beckman Coulter, USA). 
+
 3. A second agarose gel was run to confirm primer removal and retention of target amplicons after purification. 
+
 3. Purified products were then quantified using Quant-It Picogreen dsDNA Assay (Life Technologies) on an fmax Molecular Devices Fluorometer with SoftMaxPro v1.3.1
 
 
 ## Basic troubleshooting guide
 
-Identify known issues associated with the procedure, if any.
+> Identify known issues associated with the procedure, if any.
 Provide troubleshooting guidelines when available.
 
 # REFERENCES
 
-Insert all references cited in the document.
-Please insert full DOI address when available, e.g. http://doi.dx.org/10.1007/s11258-014-0404-1
+Amaral-Zettler LA, McCliment EA, Ducklow HW, Huse SM (2009) A Method for Studying Protistan Diversity Using Massively Parallel Sequencing of V9 Hypervariable Regions of Small-Subunit Ribosomal RNA Genes. PLOS ONE 4(7): e6372. https://doi.org/10.1371/journal.pone.0006372
 
 # APPENDIX A: DATASHEETS
 
-Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's relevance.
+> Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's relevance.
