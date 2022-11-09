@@ -53,7 +53,7 @@ This is a list of other protocols that are not in your folder which should be kn
 
 # BACKGROUND
 
-This protocol is aimed at amplifying the 18S rRNA hypervariable region 9 (18S V9) in eukaryotes with a focus on microbial eukaryotes. Amplicons generated using this protocol can then be sequenced using the Illumina platform. The primers (1391F, EukBr) utilized in this protocol are based on the primer utilized in Amaral-Zettler et al 2009 and the Earth Microbiome Project (EMP).
+This protocol is aimed at amplifying the 18S rRNA hypervariable region 9 (18S V9) in eukaryotes with a focus on microbial eukaryotes. Amplicons generated using this protocol can then be sequenced using the Illumina platform. The primers (1391F, EukBr) utilized in this protocol are based on the primer utilized in Amaral-Zettler et al. (2009), Stoek et al. (2010), and the Earth Microbiome Project (EMP).
 
 This work was supported by NASA grant NNX14AP62A ‘National Marine Sanctuaries as Sentinel Sites for a Demonstration Marine Biodiversity Observation Network (MBON)’ funded under the National Ocean Partnership Program (NOPP RFP NOAA-NOS-IOOS-2014-2003803 in partnership between NOAA, BOEM, and NASA), and the U.S. Integrated Ocean Observing System (IOOS) Program Office.
 
@@ -63,7 +63,7 @@ This method uses PCR to amplify the 18S V9 region using primers 1391F and EukBr 
 
 ## Method description and rationale
 
-This method is applied because of its ability to amplify the target region (18S V9) across many different groups of organisms, the target region's ability to discriminate between different taxa, and the common research application of this primer set allowing the data to be compared to a reference database and other published environmental datasets. 
+This method is applied because of its ability to amplify the target region (18S V9) across many different groups of organisms, the target region's ability to discriminate between different taxa, and the common research application of this primer set allowing the data to be compared to a reference database and other published environmental datasets.
 
 ## Spatial coverage and environment(s) of relevance
 
@@ -123,16 +123,11 @@ This method is applied because of its ability to amplify the target region (18S 
 
 ### PCR
 
-1. PCR reactions were run in single 75ul reactions for each sample using 12-basepair Golay barcoded reverse primers (Amaral-Zettler et al., 2009) with Fluidigm adapters CS1 & CS2. All primers listed in the 5’ to 3’ direction.
+1. PCR reactions were run in single 75ul reactions for each sample using 12-basepair Golay barcoded reverse primers [Amaral-Zettler et al. (2009), Stoek et al. (2010), Earth Microbiome Project] with Fluidigm adapters CS1 & CS2. All primers listed in the 5’ to 3’ direction.
   - 3 μl DNA extract template
   - 37.5 μl Amplitaq Gold Fast PCR mastermix (Applied Biosystems)
   - 3 μl each of forward and reverse primers (5 μM)
   - 28.5 μl molecular-biology grade water
-
-- 18S Forward PCR sequence (**Euk1391F**) with Fluidigm adapter CS1:
-  > ACACTGACGACATGGTTCTACA**GTACACACCGCCCGTC**
-- 18S Reverse PCR sequence (**EukBr**) with Fluidigm adapter CS2:
-  > TACGGAGCAGAGACTTGGTCT**TGATCCTTCTGCAGGTTCACCTAC**
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
@@ -141,18 +136,8 @@ This method is applied because of its ability to amplify the target region (18S 
 
 2. PCR reactions were run in 96-well plates with a NTC run in singleton for each plate
 
-3. 18S thermal cycling parameters - These parameters use a normal ramp speed::
-
-```
-95° C for 10 minutes
-35 cycles of the following three steps:
-- 94° C for 45 seconds
-- 57° C for 30 seconds
-- 68 °C for 90 seconds
-Final elongation step of 72° C for 10 minutes
-Hold at 4 °C
-```
-
+3. 18S thermal cycling parameters
+- These parameters use a normal ramp speed
 
 | PCR step | Temperature | Duration | Repetition |
 | ----- | ----- | ----- | ----- |
@@ -184,6 +169,10 @@ Provide troubleshooting guidelines when available.
 # REFERENCES
 
 Amaral-Zettler LA, McCliment EA, Ducklow HW, Huse SM (2009) A Method for Studying Protistan Diversity Using Massively Parallel Sequencing of V9 Hypervariable Regions of Small-Subunit Ribosomal RNA Genes. PLOS ONE 4(7): e6372. https://doi.org/10.1371/journal.pone.0006372
+
+Stoeck, T., Bass, D., Nebel, M., Christen, R., Jones, M. D. M., Breiner, H.-W., & Richards, T. A. (2010). Multiple marker parallel tag environmental DNA sequencing reveals a highly complex eukaryotic community in marine anoxic water. Molecular Ecology, 19 Suppl 1, 21–31. https://doi.org/10.1111/j.1365-294X.2009.04480.x
+
+Caporaso, J. G., Lauber, C. L., Walters, W. A., Berg-Lyons, D., Huntley, J., Fierer, N., Owens, S. M., Betley, J., Fraser, L., Bauer, M., Gormley, N., Gilbert, J. A., Smith, G., & Knight, R. (2012). Ultra-high-throughput microbial community analysis on the Illumina HiSeq and MiSeq platforms. ISME J 6, 1621–1624. http://doi.org/10.1038/ismej.2012.8
 
 # APPENDIX A: DATASHEETS
 

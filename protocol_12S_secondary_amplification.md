@@ -1,4 +1,4 @@
-# MBARI 12S PCR
+# Protocol Template
 
 MIOP protocol template
 
@@ -36,20 +36,18 @@ This is a list of other protocols that are not in your folder which should be kn
 | ------------- | ------------- | ------------- |
 |  Environmental DNA (eDNA) 12S Metabarcoding Illumina MiSeq NGS PCR Protocol (Touchdown) V.2 https://dx.doi.org/10.17504/protocols.io.bcppivmn  dx.doi.org/10.17504/protocols.io.bcppivmn  | Katie Pitz, Nathan Truelove, Charles Nye, Reiko P Michisaki, Francisco Chavez  | 2020-02-18  |
 
-
 ## ACRONYMS AND ABBREVIATIONS
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
-| MBARI   | Monterey Bay Aquarium Research Institute   |
-| PCR   | polymerase chain reaction   |
-|  NTC  |  no template control  |
+|    |    |
 
 ## GLOSSARY
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
-|  amplicon  | A piece of DNA or RNA that is the source and/or product of amplification or replication events (https://en.wikipedia.org/wiki/Amplicon)  |
+|    |    |
+|    |    |
 
 # BACKGROUND
 
@@ -82,125 +80,104 @@ This method is applied because of its ability to amplify the target region (12S)
 
 ## Safety
 
-> Identify hazards associated with the procedure and specify protective equipment and safety training required to safely execute the procedure
+Identify hazards associated with the procedure and specify protective equipment and safety training required to safely execute the procedure
 
 ## Training requirements
 
-> Specify technical training required for the good execution of the procedure.
+Specify technical training required for the good execution of the procedure.
 
 ## Time needed to execute the procedure
 
-> Specify how much time is necessary to execute the procedure.
+Specify how much time is necessary to execute the procedure.
 
 # EQUIPMENT
 
 | DESCRIPTION e.g. filter | PRODUCT NAME AND MODEL Provide the official name of the product | MANUFACTURER Provide the name of the manufacturer of the product. | QUANTITY Provide quantities necessary for one application of the standard operating procedure (e.g. number of filters). | REMARK For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure. |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment** |
-| ultraviolet light source [OBI:0002900] |  |  |  |  |
-| PCR instrument [OBI:0000989] |   |   |   |   |
-| electrophoresis system [OBI:0001053] |   |   |   |   |
-| fluorometer [OBI:0400143] | FMAX Fluorometer | Molecular Devices |   | with SoftMaxPro v1.3.1 |
+|  |   |   |   |   |
+|  |   |   |   |   |
+|  |   |   |   |   |
+|  |   |   |   |   |
 | **Consumable equipment** |
-| Agarose gel |   |   | 2 |   |
-| Agencourt AMPure XP bead system |  | Beckman Coulter, USA  |   |   |
-| Quant-It Picogreen dsDNA Assay |   | Life Technologies |   |   |
+|  |   |   |   |   |
+|  |   |   |   |   |
 | **Chemicals** |
-| 10% Bleach |   |   |   |   |
-| 70% Ethanol |   |   |   |   |
-| RNase Away |   |   |   |   |
-| Amplitaq Gold Fast PCR mastermix |   |   |   |   |
-| molecular-biology grade water |   |   |   |   |
-| forward and reverse primers (5 μM) |   |   |   |   |
+|  |   |   |   |   |
+|  |   |   |   |   |
 
 # STANDARD OPERATING PROCEDURE
+
+In the following SOP, please use the exact names of equipment as noted in the table above.
 
 ## Protocol
 
 ### Preparation
 
-1.  Disinfect work surfaces with 10% bleach, followed by 70% ethanol.
+1.  Complete "protocol_12S_PCR_touchdown.md" and ship samples to Michigan State University RTSF Genomics Core.
 
-2.  RNase Away and pipets with RNase Away
+### _The following steps are performed by [MSU's RTSF Genomics Core](https://rtsf.natsci.msu.edu/genomics/)_
 
-3. UV pipets, molecular grade water, and tube racks for 20 minutes prior to starting protocol.
+### Secondary Amplification
 
-### PCR
+1. Secondary amplification and NGS were performed at Michigan State University's Research Technology Support Facility (RTSF).
+    An aliquot of 20 μL from each purified primary PCR product was sent to RTSF Genomics Core at MSU for secondary PCR amplification with primers which targeted the CS1/CS2 ends of the primary PCR products and added dual indexed, Illumina compatible adapters with barcodes.
+ - PE1-BC-CS1 (forward): `AATGATACGGCGACCACCGAGATCT-[i5-BC(index 2)]-ACACTGACGACATGGTTCTACA`
+ - PE2-BC-CS2 (reverse): `CAAGCAGAAGACGGCATACGAGAT-[i7-BC(index 1)]-TACGGTAGCAGAGACTTGGTCT`
 
-1. PCR reactions were run in triplicate 25 μl reactions for each sample using MiFish_U primers (Miya et al. 2015) with Fluidigm adapters CS1 & CS2. All primers listed in the 5’ to 3’ direction.
 
-  - 1 μl DNA extract template
-  - 12.5 μl Amplitaq Gold™ Fast PCR mastermix (Applied Biosystems)
-  - 1 μl forward primer (10 μM)
-  - 1 μl reverse primer (10 μM)
-  - 9.5 μl molecular-grade, nuclease-free water
+ | Primer Name | Direction | Sequence (5’ -> 3’)|
+ | ----- | ----- | ----- |
+ | PE1-BC-CS1 | forward | AATGATACGGCGACCACCGAGATCT-[i5-BC(index 2)]-ACACTGACGACATGGTTCTACA |
+ | PE2-BC-CS2 | reverse | CAAGCAGAAGACGGCATACGAGAT-[i7-BC(index 1)]-TACGGTAGCAGAGACTTGGTCT |
 
-- Fluidigm CS1 + **12S MiFish_U** (forward):
-  >ACACTGACGACATGGTTCTACA**GTCGGTAAAACTCGTGCCAGC**
 
-- Fluidigm CS2 + **12S MiFish_U** (reverse):
-  > TACGGTAGCAGAGACTTGGTCT**CATAGTGGGGTATCTAATCCCAGTTTG**
+11. The secondary PCR amplifications were carried out in 15 μL reactions, using 1 μL original pooled PCR product.
+ - 6 μl 2.5X HotMaster Mix
+ - 7 μl DI water
+ - 1 μl Primer Mix (6uM)
+ - 1 μl original eDNA PCR product
+12. Secondary 12S cycling parameters:
+ ```
+ 95°C 3 minutes
+ 15 cycles of the following three steps:
+ - 95°C 15 seconds
+ - 60°C 30 seconds
+ - 72°C 1 minute
+ 72°C 3 minutes
+ 25°C Hold
+ ```
+ | PCR step | Temperature | Duration | Repetition |
+ | ----- | ----- | ----- | ----- |
+ | denature | 95° C | 3 minutes | 1 |
+ | denature | 95° C | 15 seconds | 15 |
+ | anneal | 60° C | 30 seconds | 15 |
+ | extension | 72 °C | 1 minute | 15 |
+ | extension | 72° C | 3 minutes | 1 |
+ | hold | 25° C | infinity | 1 |
 
-| PCR Primer Name | Direction | Sequence (5’ -> 3’)|
-| ----- | ----- | ----- |
-| Fluidigm CS1 + **12S MiFish_U**| forward | ACACTGACGACATGGTTCTACA**GTCGGTAAAACTCGTGCCAGC** |
-| Fluidigm CS2 + **12S MiFish_U** (reverse) | reverse | TACGGTAGCAGAGACTTGGTCT**CATAGTGGGGTATCTAATCCCAGTTTG** |
-
-2. PCR reactions were performed in 96-well plates with a no-template control (NTC) for each PCR plate, for a total of 3 PCR negative controls. An artificial community was used as a positive control.
-
-3. Primary 12S cycling parameters, using the CALeDNA Touchdown method:
-
-```
-1. 95°C 15 minutes
-*13 cycles of the following 3 steps (step 3 changes -1.5°C each cycle; "touchdown")
-2. 94°C 30 seconds*
-3. 69.5°C 30 seconds*
-4. 72°C 90 seconds*
-*25 cycles of the following 3 steps
-5. 94°C 30 seconds*
-6. 50°C 30 seconds*
-7. 72°C 45 seconds*
-8. 72°C 10 minutes
-9. 4°C HOLD
-```
-
-| PCR step | Temperature | Duration | Repetition |
-| ----- | ----- | ----- | ----- |
-| denature | 95° C | 15 minutes | 1 |
-| denature | 94° C | 30 seconds | 13 |
-| anneal | 69.5° C (-1.5° C each cycle) | 30 seconds | 13 |
-| extension | 72 °C | 90 seconds | 13 |
-| denature | 94° C | 30 seconds | 25 |
-| anneal | 50° C | 30 seconds | 25 |
-| extension | 72 °C | 45 seconds | 25 |
-| extension | 72° C | 10 minutes | 1 |
-| hold | 4° C | infinity | 1 |
-
+ 11. An agarose gel was run after secondary PCR to confirm the presence of target bands and absence of non-specific amplification across environmental samples as well as the absence of amplification in NTCs.
+ 12. After secondary PCR, products were run through Invitrogen SequalPrep Normalization Plate (ThermoFisher Scientific) using manufacturer's protocol to create pooled library.
 
 
 ### Quality control, PCR clean-up
 
-1. After primary PCR amplification of the marker region, the PCR products were pooled (75 μL total per unique environmental sample) and run through a 2% agarose gel to confirm the presence of target bands and absence of non-specific amplification across environmental samples.
+1. After PCR amplification of the marker region, PCR products were run through an agarose gel to confirm the presence of target bands and absense of non-specific amplification across environmental samples as well as the absence of amplification in no-template controls (NTCs).
+2. PCR products were purified and size selected using the Agencourt AMPure XP bead system (Beckman Coulter, USA). 
+3. A second agarose gel was run to confirm primer removal and retention of target amplicons after purification. 
+3. Purified products were then quantified using Quant-It Picogreen dsDNA Assay (Life Technologies) on an fmax Molecular Devices Fluorometer with SoftMaxPro v1.3.1
 
-2. Primary PCR products were purified and size selected using the Agencourt AMPure XP bead system (Beckman Coulter, USA) at 1.2x volume beads to product. 
-
-3. A second agarose gel was run to confirm primer removal and retention of target amplicons after purification.
-
-4. NTCs were also tested using a Qubit dsDNA 1x high sensitivity kit to ensure no amplification.
-
-Secondary amplification and NGS were performed at Michigan State University's Research Technology Support Facility (RTSF).
-
-protocol_12S_secondary_amplification
-(link to Protocol DOI)
 
 ## Basic troubleshooting guide
 
-> Identify known issues associated with the procedure, if any.
+Identify known issues associated with the procedure, if any.
 Provide troubleshooting guidelines when available.
 
 # REFERENCES
 
+Insert all references cited in the document.
+Please insert full DOI address when available, e.g. http://doi.dx.org/10.1007/s11258-014-0404-1
 
 # APPENDIX A: DATASHEETS
 
-> Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's relevance.
+Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's relevance.
