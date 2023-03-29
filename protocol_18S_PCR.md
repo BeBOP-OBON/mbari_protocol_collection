@@ -25,8 +25,8 @@ This is a list of other protocols deposited in your folder which should be known
 
 | PROTOCOL NAME AND LINK  | VERSION The version of the protocol you linked to | RELEASE DATE This is the date corresponding to the version listed to the left |
 | ------------- | ------------- | ------------- |
-|    |    | yyyy-mm-dd  |
-|    |    | yyyy-mm-dd  |
+|  protocol_18S_secondary_amplification.md  |    | yyyy-mm-dd  |
+|  protocol_18S_sequencing.md  |    | yyyy-mm-dd  |
 
 ## RELATED EXTERNAL PROTOCOLS
 
