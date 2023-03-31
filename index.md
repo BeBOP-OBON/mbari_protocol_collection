@@ -11,6 +11,6 @@ Protocols from the Biological Oceanography Lab at the Monterey Bay Aquarium Rese
 - [18S secondary amplification](protocol_18S_secondary_amplification.md)
 - [18S sequencing](protocol_18S_sequencing.md)
 
-## 12S MiFISH
+### 12S MiFISH
 
-### [12S "touchdown"](protocol_12S_PCR_touchdown.md)
+- [12S "touchdown" PCR](protocol_12S_PCR_touchdown.md)
